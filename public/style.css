@@ -1,0 +1,98 @@
+/* Reset dasar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+    padding: 40px 20px;
+}
+
+/* Navbar Styling */
+.navbar {
+    padding: 8px 20px;  /* Mengurangi padding untuk navbar lebih kecil */
+    font-size: 14px; /* Ukuran font navbar lebih kecil */
+}
+
+/* Menambahkan margin pada search form */
+.navbar .d-flex {
+    margin-left: auto; /* Menjaga form pencarian berada di kanan */
+}
+
+/* Menyesuaikan ukuran tombol dan input pencarian */
+.navbar .form-control {
+    font-size: 13px;
+    padding: 5px;
+}
+
+.navbar .btn-outline-success {
+    font-size: 13px;
+    padding: 5px 10px;
+}
+
+/* Mengurangi tinggi navbar */
+.navbar-light .navbar-nav .nav-link {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+/* Layout flexbox untuk cards */
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+/* Styling setiap card */
+li {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+}
+
+/* Hover effect untuk card */
+li:hover {
+    transform: translateY(-5px);
+}
+
+/* Gaya untuk nama di dalam card */
+li h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* Gaya untuk teks (NIM dan email) */
+li p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Styling gambar profil */
+li img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Styling responsif untuk card */
+@media (max-width: 768px) {
+    ul {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Menyesuaikan ukuran kolom pada layar kecil */
+    }
+}
