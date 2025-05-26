@@ -30,3 +30,9 @@ Route::get('/', function () {
         ]
     );
 });
+
+Route::get('/mahasiswa', function () {
+    $nama = "Jelvis Anggono";
+    $nilai = [75,80,90];
+    return view('mahasiswa', compact('nama', 'nilai'));
+});
